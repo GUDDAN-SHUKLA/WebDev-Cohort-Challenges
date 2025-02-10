@@ -1,0 +1,164 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  /* Define header styles here */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 4rem;
+}
+
+.logo {
+  /* Define logo styles here */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #8B4513;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.logo img {
+  /* Define image styles within the logo here */
+  border: 2px solid #8B4513;
+  border-radius: 50px;
+}
+
+.nav-menu a {
+  /* Define navigation link styles here */
+  text-decoration: none;
+  color: #8B4513;
+  margin-right: 1rem;
+}
+
+.nav-menu a:hover {
+  /* Define hover styles for navigation links here */
+  color: #dfaa85;
+}
+
+.hamBurger {
+  display: none;
+}
+
+.hero {
+  /* Define hero section styles here */
+  /* height: 80vh; */
+  background-image: url("./assets/chaipatti.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  /* Define hero text styles here */
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-text h1 {
+  /* Define styles for h1 in hero-text here */
+  font-size: 2.7rem;
+  color: #ffffff;
+}
+
+.hero-text p {
+  /* Define styles for paragraph in hero-text here */
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0 0 20px 0;
+}
+
+.shop-button {
+  /* Define shop button styles here */
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  color: #ffffff;
+  background-color: #8B4513;
+}
+
+.shop-button:hover {
+  /* Define hover styles for shop button here */
+  background-color: #b44d03;
+  transition: all 0.3s ease-in-out;
+}
+
+.tea-collection {
+  /* Define tea collection section styles here */
+  padding: 40px 0;
+  color: #8B4513;
+}
+
+.tea-collection h2 {
+  /* Define styles for h2 in tea collection here */
+  text-align: center;
+}
+
+.tea-cards {
+  /* Define tea cards container styles here */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.tea-card {
+  /* Define styles for each tea card here */
+  width: 300px;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.tea-card h3 {
+  /* Define styles for tea card headings here */
+}
+
+.tea-card p {
+  /* Define styles for tea card paragraph text here */
+  font-size: 0.8rem;
+  color: #333333;
+  padding: 10px 0;
+}
+
+
+/* Media Query Css */
+@media (max-width: 640px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamBurger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero-text {
+    height: 55vh;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}

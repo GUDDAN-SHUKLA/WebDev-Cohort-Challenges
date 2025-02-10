@@ -1,0 +1,193 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-image: url("./assets/chaigym.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navbar styles */
+.navbar {
+  /* Add styles for navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color : #333333;
+  padding: 20px 50px;
+}
+
+.logo {
+  /* Add styles for the logo */
+  display: flex;
+  align-items: center;
+  padding: 0 20px ;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  
+}
+
+.logo img {
+  /* Add styles for logo image */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  /* Add styles for nav links */
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hamburger{
+  display: none;
+}
+
+.nav-links a:hover {
+  /* Add hover styles for nav links */
+  color: #f07204;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hero section styles */
+.hero {
+  /* Add styles for hero section */
+  background-color: #0c0b0aad;
+  height: 87vh;
+  padding: 80px 50px;
+}
+
+.hero-content {
+  /* Add styles for hero content */
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.hero-content h1 {
+  /* Add styles for hero heading */
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.hero-content p {
+  /* Add styles for hero paragraph */
+  font-size: 1.2rem;
+  text-align: center;
+
+}
+
+.cta-button {
+  /* Add styles for CTA button */
+  background-color: #FF7902;
+  padding: 12px 22px;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  border: none;
+  margin: 10px;
+
+}
+.cta-button:hover {
+  /* Add hover styles for CTA button */
+  background-color: #f07204;
+}
+
+/* Features section styles */
+.features {
+  /* Add styles for features section */
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.89);
+    gap: 20px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.feature {
+  /* Add styles for each feature block */
+  text-align: center;
+  border: 1px solid #e29c32;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feature h3 {
+  /* Add styles for feature heading */
+  font-size: 1rem;
+  color: #ff7902;
+}
+
+.feature p {
+  /* Add styles for feature paragraph */
+  color: #ddddd8;
+  font-size: 20px;
+}
+
+/* Responsiveness styles */
+@media (max-width: 640px) {
+  /* Add styles for screen sizes up to 768px */
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero {
+     height: 100vh; 
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    padding: 10px 0 ;
+  }
+
+  .features {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .feature {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
